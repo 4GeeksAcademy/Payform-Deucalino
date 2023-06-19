@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+    <script src="https://kit.fontawesome.com/9d612dda05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form>
+        <fieldset class="bg-secondary d-flex flex-row">
+            <legend>Payform for Deucalinos</legend>
+        </fieldset>
+        <fieldset>
+            <div class="alert alert-danger" role="alert">
+                Some fields are missing
+            </div>
+           <div>
+                <label>Card#</label>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div>
+                <label>CVC#</label>
+                <div>
+                    <input type="text">
+                </div>
+            </div>
+            <div>
+                <label>$ Amount</label>
+                <div>
+                    <input type="text"> 
+                </div>
+            </div>
+            <div>
+                <label>First name.</label>
+                <div>
+                    <input type="text">
+                </div>
+            </div> 
+            <div>
+                <label>Last name.</label>
+                <div>
+                    <input type="text"> 
+                </div>
+            </div>       
+            <div>
+                <label>City</label>
+                <div>
+                    <input type="text">
+                </div>
+            </div>  
+            <div>
+                <label>State</label> 
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pick your state
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Kansas</a></li>
+                      <li><a class="dropdown-item" href="#">Wioming</a></li>
+                      <li><a class="dropdown-item" href="#">Colorado</a></li>
+                    </ul>
+                  </div>
+            </div>     
+            <div>
+                <label>Postal Code</label> 
+                <div>
+                    <input type="text">  
+                </div>
+            </div>         
+            <div> 
+                <label>We accept:</label>
+                <div class="bg-secondary">
+                <i class="fa-brands fa-cc-visa"></i>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <i class="fa-brands fa-cc-paypal"></i>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <i class="fa-brands fa-bitcoin"></i>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                </div>
+            </div>
+            <div>
+                <label>Messages</label>
+                <div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2"></label>
+                      </div>
+                </div>
+            </div> 
+            <div>
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-secondary">Cancel</button>  
+                    </div>
+                    <div class="btn-group me-2" role="group" aria-label="Second group">
+                      <button type="button" class="btn btn-primary">Send</button>
+                    </div>
+                  </div>  
+            </div> 
+        </fieldset>
+      </form>
+<link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"/>    
+</body>
+</html>
