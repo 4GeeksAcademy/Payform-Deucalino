@@ -3,108 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
-    <script src="https://kit.fontawesome.com/9d612dda05.js" crossorigin="anonymous"></script>
+    <title>Payment form for Deucalinos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <form>
-        <fieldset class="bg-secondary d-flex flex-row">
-            <legend>Payform for Deucalinos</legend>
-        </fieldset>
-        <fieldset>
-            <div class="alert alert-danger" role="alert">
-                Some fields are missing
-            </div>
-           <div>
-                <label>Card#</label>
+    <table class="table table-primary-subtle">
+        <thead>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <th scope="row"></th>
+            <td colspan="3">  Payment form for Deucalinos</td>
+          </tr>
+          <tr>
+            <th scope="row">
+                <td colspan="3">
+                    <div class="alert alert-danger" role="alert">
+                        Some data are missing!
+                      </div>
+                </td>  
+            </th>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td col-4 >
                 <div>
-                    <input type="text">
+                    <label>Card#</label>
+                    <input type="text" class="form-control" placeholder="xxxxxxxxxx" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-            </div>
-            <div>
-                <label>CVC#</label>
+            </td>
+            <td col-4>
                 <div>
-                    <input type="text">
+                    <label>CVC#</label>
+                    <input type="text" class="form-control" placeholder="000" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-            </div>
-            <div>
-                <label>$ Amount</label>
+            </td>
+            <td>
                 <div>
-                    <input type="text"> 
+                    <label>$ Amount</label>
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
                 </div>
-            </div>
-            <div>
-                <label>First name.</label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td col-6 >
                 <div>
-                    <input type="text">
+                    <label>First name</label>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-            </div> 
-            <div>
-                <label>Last name.</label>
+            </td>
+            <td>
                 <div>
-                    <input type="text"> 
+                    <label>Last name</label>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-            </div>       
-            <div>
-                <label>City</label>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td col-4 >
                 <div>
-                    <input type="text">
+                    <label>City</label>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-            </div>  
-            <div>
-                <label>State</label> 
-                <div class="dropdown">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Pick your state
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Kansas</a></li>
-                      <li><a class="dropdown-item" href="#">Wioming</a></li>
-                      <li><a class="dropdown-item" href="#">Colorado</a></li>
-                    </ul>
-                  </div>
-            </div>     
-            <div>
-                <label>Postal Code</label> 
+            </td>
+            <td col-4>
                 <div>
-                    <input type="text">  
-                </div>
-            </div>         
-            <div> 
-                <label>We accept:</label>
-                <div class="bg-secondary">
-                <i class="fa-brands fa-cc-visa"></i>
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <i class="fa-brands fa-cc-mastercard"></i>
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <i class="fa-brands fa-cc-paypal"></i>
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <i class="fa-brands fa-bitcoin"></i>
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                </div>
-            </div>
-            <div>
-                <label>Messages</label>
-                <div>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2"></label>
+                    <label>State</label>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Pick your state</button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Nevada</a></li>
+                          <li><a class="dropdown-item" href="#">California</a></li>
+                          <li><a class="dropdown-item" href="#">Ontario</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Washington</a></li>
+                        </ul>
                       </div>
                 </div>
-            </div> 
-            <div>
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-secondary">Cancel</button>  
+            </td>
+            <td>
+                <div>
+                    <label>Postal Code</label>
+                    <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td col-6 >
+                <div> 
+                    <label>We accept:</label>
+                    <div class="bg-secondary">
+                     <i class="fa-brands fa-cc-visa"></i>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                     <i class="fa-brands fa-cc-paypal"></i>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                     </div>
+            </td>
+            <td>
+                <div>
+                    <label>Messages</label>
+                    <div>
+                   <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2"></label>
                     </div>
-                    <div class="btn-group me-2" role="group" aria-label="Second group">
-                      <button type="button" class="btn btn-primary">Send</button>
                     </div>
-                  </div>  
-            </div> 
-        </fieldset>
-      </form>
-<link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"/>    
+                    </div> 
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td colspan="3"> <div>
+                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                 <button type="button" class="btn btn-secondary">Cancel</button>  
+                </div>
+               <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-primary">Send</button>
+               </div>
+               </div> 
+             </div> </td>
+          </tr>
+        </tbody>
+      </table>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
